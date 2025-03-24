@@ -1,0 +1,61 @@
+/* Components/Footer.module.css */
+footer {
+  background-color: #0a0a0a; /* Cor de fundo */
+  color: white; /* Cor do texto */
+  text-align: center; /* Centraliza o texto */
+  width: 100%; /* Largura total */
+  position: relative; /* Para evitar sobreposições */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  margin-top: 3rem;
+}
+.icone:hover {
+  transform: scale(1.5);
+  background-color: #f2f2f2; /* Cor de fundo laranja */
+  border-radius: 50%; /* Torna o fundo arredondado */
+}
+.icone {
+  width: 25px;
+  height: 25px;
+  margin-right: 1rem;
+  padding: 0.1rem;
+  transition: background-color 0.3s, transform 0.3s; /* Suaviza as transições */
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 2%;
+  align-items: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.container2 {
+  display: flex;
+  flex-direction: column;
+  margin-right: 4rem;
+}
+.p {
+  font-size: 18px;
+  font-family: "Jaini", "system-ui", sans-serif;
+  color: #f2f2f2;
+}
+.h2 {
+  font-size: 24px;
+  font-family: "Jaini", "system-ui", sans-serif;
+  color: #f2f2f2;
+}
+.Nome {
+  font-size: 24px; /* Aumentando o tamanho da fonte */
+  color: #e26512; /* Cor do texto */
+  font-weight: 400; /* Deixa a fonte mais grossa */
+  font-family: "Jaini", "system-ui", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-left: 3rem;
+}

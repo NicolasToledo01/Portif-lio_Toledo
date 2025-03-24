@@ -1,0 +1,176 @@
+nav {
+  position: fixed; /* Fixa a navegação no topo */
+  top: 0; /* Posiciona no topo */
+  left: 0; /* Alinha à esquerda */
+  right: 0; /* Alinha à direita */
+  height: auto; /* Altura definida da navegação */
+  background-color: #0a0a0a; /* Cor de fundo */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+  z-index: 1000; /* Garante que esteja acima de outros conteúdos */
+  text-align: center; /* Centraliza o texto */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.container {
+  display: flex; /* Alinhar filhos na vertical */
+  flex-direction: column; /* Organiza as seções em coluna */
+}
+
+section {
+  height: auto; /* Altura automática */
+}
+
+/* Borda da .bord */
+.bord {
+  width: 90%;
+  border: #cbcccf 0.1px solid; /* Cor e largura da borda */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  flex-direction: column; /* Para telas menores, mude a direção para coluna */
+}
+
+/* Estilizando a lista na navbar */
+ul {
+  list-style: none; /* Remove marcadores de lista */
+  display: flex; /* Alinha os itens na mesma linha */
+  flex-wrap: wrap; /* Permite quebra de linha se necessário */
+  top: 50%;
+  left: 50%;
+  transition: translate(-50%, -50%); /* Transição suave para efeito de hover */
+  cursor: pointer;
+}
+
+ul li a {
+  position: relative;
+  display: block;
+  text-transform: uppercase;
+  flex: 1; /* Permite que os itens se expandam */
+  padding: 10px 10px;
+  z-index: 1;
+}
+
+.nav a {
+  text-decoration: none; /* Remove sublinhado */
+  color: #ffffff; /* Cor de fundo branca */
+  transition: 0.5s; /* Transição suave na cor ao passar o mouse */
+}
+
+/* Estilo para telas menores */
+@media (max-width: 600px) {
+  .nav ul {
+    flex-direction: column; /* Alinha os itens em coluna */
+    align-items: center; /* Centraliza os itens horizontalmente */
+  }
+
+  .bord {
+    width: 100%; /* Altera a largura da borda para 100% */
+  }
+
+  .ul {
+    font-size: 20px; /* Ajusta o tamanho da fonte para telas menores */
+  }
+}
+
+/* Efeito de hover nos links */
+ul li a:hover {
+  color: #e26512; /* Altera a cor ao passar o mouse */
+}
+ul li a:hover:before {
+  transform: scaleY(1);
+  opacity: 1;
+}
+ul li a:hover:after {
+  transform: scaleY(1);
+  opacity: 1;
+}
+
+.ul {
+  font-size: 18px; /* Tamanho base da fonte */
+  font-weight: 700; /* Negrito */
+  font-family: monospace; /* Fonte monoespaçada */
+  gap: 2rem;
+}
+
+/* Efeito ao passar o mouse em itens de lista */
+ul li a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-bottom: #e26512 2px solid; /* Adiciona uma borda na parte inferior */
+  border-top: #e26512 2px solid; /* Adiciona uma borda na parte inferior */
+  transform: scaley(1.5);
+  opacity: 0;
+  transition: 0.4s;
+}
+ul li a:after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scale(0); /* Aumenta o item levemente no hover */
+  transform: scale(1.5);
+  opacity: 0;
+  transition: 0.4s;
+  z-index: -1;
+}
+.icone {
+  width: 14px;
+  height: 14px;
+  filter: invert(1); /* Inverte as cores da imagem */
+}
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin-right: 10px;
+  width: 22px;
+  height: 22px;
+  transition: transform 0.1s ease; /* Transição suave para transformações */
+  cursor: pointer;
+}
+.icons:hover {
+  transform: scale(1.2); /* Aumenta a escala verticalmente ao passar o mouse */
+}
+.lineNav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.1s ease; /* Transição suave para transformações */
+}
+.columIcons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.lineIcons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.1s ease; /* Transição suave para transformações */
+}
+
+.Nome {
+  font-size: 28px; /* Aumentando o tamanho da fonte */
+  color: #e26512; /* Cor do texto */
+  font-weight: 400; /* Deixa a fonte mais grossa */
+  font-family: "Jaini", "system-ui", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 0.3rem;
+}

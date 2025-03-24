@@ -1,0 +1,192 @@
+.main {
+  height: 100vh;
+  width: 100%;
+}
+.titles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+.titlesAprendizagem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+  margin-top: 5%;
+}
+.h1 {
+  margin-bottom: 10%;
+}
+.left {
+  background-color: #e26512; /* Metade esquerda branca */
+  width: 50%; /* Ocupa 50% do espaço */
+  height: 100%; /* Altura total */
+  position: absolute;
+  left: 0; /* Alinhar à esquerda */
+  border-top-right-radius: 100px; /* Bordas arredondadas na parte inferior esquerda */
+  border-bottom-right-radius: 100px; /* Bordas arredondadas na parte inferior esquerda */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+}
+
+.right {
+  background-color: #f2f2f2; /* Metade direita laranja */
+  width: 50%; /* Ocupa 50% do espaço */
+  height: 100%; /* Altura total */
+  position: absolute;
+  right: 0; /* Alinhar à direita */
+  border-top-left-radius: 100px; /* Bordas arredondadas na parte inferior esquerda */
+}
+/* Estilos Comuns para Ícones */
+.icone,
+.iconeJs,
+.iconeReact,
+.seta {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 20px;
+  transition: transform 0.3s ease; /* Transição suave */
+}
+
+.iconeCss {
+  width: 70px;
+  height: 70px;
+}
+
+/* Cards de Habilidade */
+.containerCards {
+  display: flex;
+  flex-direction: row;
+  gap: 2%;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 5%;
+}
+.containerCardsAprendizagem {
+  display: flex;
+  flex-direction: row;
+  gap: 2%;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 5%;
+}
+
+.CardSkill {
+  margin: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Efeito de Hover para Cards de Habilidade */
+.CardSkill:hover {
+  transform: scale(1.1); /* Efeito de aumento ao passar o mouse */
+  transition: 0.3s; /* Transição suave */
+}
+
+/* Card para conteúdo adicional */
+.cardContainer {
+  margin-top: 20px;
+}
+
+.card {
+  padding: 20px;
+  border-radius: 20px; /* Bordas arredondadas para cards */
+  background-color: white; /* Fundo da div */
+  border: 2px solid #000000d1; /* Espessura da borda */
+  width: 250px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 10px 15px rgba(106, 105, 105, 0.5); /* Sombra mais suave e desfocada */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Eleva o card ao passar o mouse */
+  box-shadow: 0px 15px 25px rgba(106, 105, 105, 0.5); /* Aumenta a sombra ao passar o mouse */
+  background-color: #f0f0f0; /* Muda a cor do fundo ao passar o mouse */
+}
+
+/* Estilos da barra de proficiência */
+.proficiency {
+  margin-top: 20px; /* Espaçamento acima */
+}
+
+.graphContainer {
+  background-color: #f0f0f0; /* Cor de fundo suave */
+  border: 1px solid #cccccc; /* Borda sutil */
+  border-radius: 4px; /* Bordas arredondadas */
+  height: 10px; /* Ajuste a altura conforme necessário */
+  margin: 5px 0; /* Espaço vertical entre resultados */
+}
+
+.graph {
+  height: 100%;
+}
+
+.bar {
+  height: 100%; /* Torna a barra a altura total do contêiner */
+  background-color: #7dabff; /* Azul mais interessante */
+  border-radius: 4px; /* Borda arredondada */
+  transition: width 0.5s ease; /* Transição suave ao atualizar a largura */
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+  .icone,
+  .iconeJs,
+  .iconeReact,
+  .seta {
+    width: 50px;
+    height: 50px;
+  }
+  .iconeCss {
+    width: 45px;
+    height: 55px;
+  }
+}
+
+@media (max-width: 480px) {
+  .icone,
+  .iconeJs,
+  .iconeReact,
+  .seta {
+    width: 40px;
+    height: 40px;
+  }
+  .iconeCss {
+    width: 35px;
+    height: 45px;
+  }
+}
+/* Efeito de onda */
+.CardSkill:active::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%; /* Aumenta o tamanho do que vamos animar */
+  height: 300%; /* Faz com que a onda se expanda */
+  border-radius: 50%;
+  background: rgba(50, 150, 250, 0.5);
+  transform: translate(-50%, -50%) scale(0); /* Centraliza e inicia invisível */
+  animation: wave 0.6s ease-out forwards; /* Animação da onda */
+}
+
+@keyframes wave {
+  to {
+    transform: translate(-50%, -50%) scale(1); /* Expande a onda */
+    opacity: 0; /* Efeito de fade out */
+  }
+}

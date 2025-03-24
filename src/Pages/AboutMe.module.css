@@ -1,0 +1,69 @@
+.main {
+  height: 100vh;
+}
+.animationContainer {
+  width: 150px; /* Ajuste conforme necessário */
+  height: 150px; /* Ajuste conforme necessário */
+  overflow: hidden; /* Garante que nada saia do contêiner */
+  margin-top: 30%;
+  margin-left: 40%;
+  cursor: pointer;
+}
+.sobre {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  border-bottom: 2px solid #e26512;
+  margin-top: 1rem;
+}
+.left {
+  background-color: #f2f2f2; /* Metade esquerda branca */
+  width: 50%; /* Ocupa 50% do espaço */
+  height: 100%; /* Altura total */
+  position: absolute;
+  left: 0; /* Alinhar à esquerda */
+  border-bottom-right-radius: 100px; /* Bordas arredondadas na parte inferior esquerda */
+  border-top: 2px solid #e26512;
+}
+
+.right {
+  background-color: #e26512; /* Metade direita laranja */
+  width: 50%; /* Ocupa 50% do espaço */
+  height: 100%; /* Altura total */
+  position: absolute;
+  right: 0; /* Alinhar à direita */
+  border-bottom-left-radius: 100px; /* Bordas arredondadas na parte inferior esquerda */
+}
+
+.card {
+  padding: 15px;
+  border-radius: 40px; /* Bordas arredondadas */
+  height: auto;
+  width: 80%; /* Alterado para permitir ajuste em telas menores */
+  transition: transform 0.2s; /* Suaviza a transformação */
+  margin: 1rem; /* Adiciona margem para espaçamento */
+  display: flex; /* Permite layout flexível para conteúdo interno */
+  flex-direction: column; /* Alinha conteúdo interno na vertical */
+  align-items: center; /* Centraliza conteúdo interno */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Aumenta a div em 5% */
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+  .card {
+    width: 80%; /* Aumenta a largura em telas menores */
+  }
+}
+
+@media (max-width: 480px) {
+  .main {
+    padding-inline: 0.5rem; /* Diminui o padding em telas menores */
+  }
+
+  .card {
+    width: 90%; /* Ajusta a largura para telas de celulares */
+  }
+}

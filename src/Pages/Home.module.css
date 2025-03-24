@@ -1,0 +1,122 @@
+.main {
+  background-color: #f2f2f2;
+  height: 100vh;
+  width: 100%;
+}
+
+.icone {
+  width: 35px; /* Alterado para unidades relativas */
+  height: 35px;
+  transition: transform 0.2s; /* Suaviza a transformação */
+  filter: grayscale(100%); /* Aplica o filtro preto e branco */
+}
+
+.icone:hover {
+  transform: scale(1.2);
+  filter: grayscale(0%); /* Remove o filtro ao passar o mouse */
+}
+
+.contato {
+  margin-top: 10px;
+  background-color: #e26512;
+  width: 160px;
+  height: 40px;
+  box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 3px 0px;
+  border-radius: 15px;
+  color: #000000;
+  font-weight: bold;
+  display: flex; /* Para alinhar itens internamente */
+  justify-content: center; /* Alinhamento horizontal no centro */
+  align-items: center; /* Alinhamento vertical no centro */
+  font-family: "Jaini", "system-ui", sans-serif;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.divContato {
+  justify-content: center;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 5%;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; /* Permite que os itens se reorganizem em telas menores */
+  margin-top: 70px;
+}
+.men {
+  width: 300px;
+  height: auto;
+}
+
+.divIcones {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center; /* Centraliza os ícones */
+}
+
+.divParagrafos {
+  color: black;
+  font-size: 1rem; /* Alterado para unidade relativa */
+  margin: 10px;
+  line-height: 1.5; /* Melhora a legibilidade do texto */
+}
+
+.p {
+  margin-bottom: 5%;
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+  /* Para telas menores, como tablets e smartphones */
+  .icone {
+    width: 1.5rem; /* Diminui o tamanho dos ícones */
+    height: 1.5rem;
+  }
+
+  .divParagrafos {
+    font-size: 0.9rem; /* Diminui tamanho da fonte em telas menores */
+  }
+
+  .container {
+    flex-direction: column; /* Muda o layout para coluna em telas menores */
+    align-items: flex-start; /* Alinha os itens no início */
+  }
+  .main {
+    padding: 20px;
+    height: auto;
+    margin: 0 auto;
+  }
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+  .men {
+    width: 0px;
+    height: 0px;
+  }
+  .divIcones {
+    margin-top: 20%;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Para celulares */
+  .main {
+    padding-inline: 0.5rem; /* Diminui o padding em telas menores */
+    margin-top: 50%;
+    padding: 20px;
+    height: auto;
+  }
+  .men {
+    width: 0px;
+    height: 0px;
+  }
+  .divIcones {
+    margin-top: 0;
+  }
+}

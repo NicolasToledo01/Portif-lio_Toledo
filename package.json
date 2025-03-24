@@ -1,0 +1,39 @@
+{
+  "homepage": "https://NicolasToledo01.github.io/portifolio-nicolas",
+  "name": "portifolio-nicolas",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "lottie-web": "^5.12.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-lottie": "^1.2.10",
+    "react-router-dom": "^6.29.0",
+    "react-scroll": "^1.9.3"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.19.0",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@types/react-lottie": "^1.2.10",
+    "@types/react-scroll": "^1.8.10",
+    "@types/react-slick": "^0.23.13",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9.19.0",
+    "eslint-plugin-react": "^7.37.4",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-react-refresh": "^0.4.18",
+    "globals": "^15.14.0",
+    "typescript": "^5.7.3",
+    "vite": "^6.1.0"
+  }
+}

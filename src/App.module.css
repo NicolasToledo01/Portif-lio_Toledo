@@ -1,0 +1,40 @@
+.container {
+  height: 100vh; /* O contêiner ocupa toda a altura da viewport */
+  width: 100%; /* O contêiner ocupa toda a largura da viewport */
+  display: flex; /* Habilita o uso de flexbox */
+  flex-direction: column; /* Alinha filhos na coluna */
+}
+
+section {
+  display: flex;
+  flex-direction: column; /* Organiza os elementos em coluna */
+  width: 100%;
+  flex: 1; /* Faz com que a seção preencha o espaço disponível */
+  margin: 0; /* Remova qualquer margem que possa adicionar espaços indesejados */
+}
+
+h1,
+h2 {
+  color: #000000; /* Definindo a cor comum para os títulos */
+  margin: 0; /* Remover margem entre os títulos e o restante do conteúdo */
+  padding: 0; /* Remover padding opcional se necessário */
+}
+
+h1 {
+  font-size: 2.5rem; /* Tamanho maior do título principal */
+}
+
+h2 {
+  font-size: 1.5rem; /* Tamanho do subtítulo */
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem; /* Ajusta o tamanho do título para telas menores */
+  }
+
+  h2 {
+    font-size: 1.25rem; /* Ajusta o tamanho do subtítulo */
+  }
+}
