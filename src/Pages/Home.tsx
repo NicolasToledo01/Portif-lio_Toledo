@@ -1,5 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import style from "./Home.module.css";
+import github from "../../public/icons-github.png";
+import linkedin from "../../public/icons-linkedin.png";
 
 const Home = () => {
   const navigate = useNavigate(); // Obtenha a função de navegação
@@ -18,11 +20,7 @@ const Home = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img
-                className={style.icone}
-                src="icons-linkedin.png"
-                alt="linkedin"
-              />
+              <img className={style.icone} src={linkedin} alt="linkedin" />
             </a>
           </div>
           <div>
@@ -31,11 +29,7 @@ const Home = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img
-                className={style.icone}
-                src="icons-github.png"
-                alt="GitHub"
-              />
+              <img className={style.icone} src={github} alt="GitHub" />
             </a>
           </div>
         </div>
