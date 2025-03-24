@@ -1,5 +1,16 @@
 import React, { useState } from "react";
 import style from "./Skills.module.css";
+import mongodb from "../../public/icons-mongo-db-.png";
+import nodejs from "../../public/icons-nodejs.png";
+import vuejs from "../../public/icons-vue.js.png";
+import figma from "../../public/figma.png";
+import typescript from "../../public/typescript.png";
+import react from "../../public/react.logo.png";
+import html from "../../public/icons-html.png";
+import css from "../../public/icons8-css3-75.png";
+import git from "../../public/git.logo.webp";
+import js from "../../public/Js.logo.png";
+import github from "../../public/GitHub_logo.png";
 
 interface Icons {
   html: boolean;
@@ -88,11 +99,7 @@ const Skills = () => {
               className={style.CardSkill}
               onClick={() => toggleContent("html")}
             >
-              <img
-                src="icons-html.png"
-                alt="Logo HTML5"
-                className={style.iconeCss}
-              />
+              <img src={html} alt="Logo HTML5" className={style.iconeCss} />
             </div>
           </div>
           <div className={style.flex}>
@@ -100,11 +107,7 @@ const Skills = () => {
               className={style.CardSkill}
               onClick={() => toggleContent("css")}
             >
-              <img
-                src="icons8-css3-75.png"
-                alt="Logo CSS3"
-                className={style.iconeCss}
-              />
+              <img src={css} alt="Logo CSS3" className={style.iconeCss} />
             </div>
           </div>
 
@@ -113,11 +116,7 @@ const Skills = () => {
               className={style.CardSkill}
               onClick={() => toggleContent("github")}
             >
-              <img
-                src="GitHub_logo.png"
-                alt="Logo GitHUb "
-                className={style.iconeJs}
-              />
+              <img src={github} alt="Logo GitHub" className={style.iconeJs} />
             </div>
           </div>
 
@@ -126,7 +125,7 @@ const Skills = () => {
               className={style.CardSkill}
               onClick={() => toggleContent("git")}
             >
-              <img src="git.logo.webp" alt="Logo GIT" className={style.icone} />
+              <img src={git} alt="Logo GIT" className={style.icone} />
             </div>
           </div>
 
@@ -135,7 +134,7 @@ const Skills = () => {
               className={style.CardSkill}
               onClick={() => toggleContent("js")}
             >
-              <img src="Js.logo.png" alt="Logo JS " className={style.iconeJs} />
+              <img src={js} alt="Logo JS " className={style.iconeJs} />
             </div>
           </div>
 
@@ -145,8 +144,8 @@ const Skills = () => {
               onClick={() => toggleContent("type")}
             >
               <img
-                src="typescript.png"
-                alt="Logo JS "
+                src={typescript}
+                alt="Logo TypeScript"
                 className={style.iconeJs}
               />
             </div>
@@ -157,11 +156,7 @@ const Skills = () => {
               className={style.CardSkill}
               onClick={() => toggleContent("react")}
             >
-              <img
-                src="react.logo.png"
-                alt="Logo React "
-                className={style.iconeJs}
-              />
+              <img src={react} alt="Logo React" className={style.iconeJs} />
             </div>
           </div>
         </div>
@@ -174,11 +169,7 @@ const Skills = () => {
               className={style.CardSkill}
               onClick={() => toggleContent("figma")}
             >
-              <img
-                src="figma.png"
-                alt="Logo Figma "
-                className={style.iconeJs}
-              />
+              <img src={figma} alt="Logo Figma" className={style.iconeJs} />
             </div>
           </div>
           <div className={style.flex}>
@@ -186,11 +177,7 @@ const Skills = () => {
               className={style.CardSkill}
               onClick={() => toggleContent("vue")}
             >
-              <img
-                src="icons-mongo-db-.png"
-                alt="Logo mongo db "
-                className={style.iconeJs}
-              />
+              <img src={mongodb} alt="Logo MongoDB" className={style.iconeJs} />
             </div>
           </div>
           <div className={style.flex}>
@@ -198,11 +185,7 @@ const Skills = () => {
               className={style.CardSkill}
               onClick={() => toggleContent("node")}
             >
-              <img
-                src="icons-nodejs.png"
-                alt="Logo Node"
-                className={style.iconeJs}
-              />
+              <img src={nodejs} alt="Logo Node.js" className={style.iconeJs} />
             </div>
           </div>
 
@@ -211,11 +194,7 @@ const Skills = () => {
               className={style.CardSkill}
               onClick={() => toggleContent("mongo")}
             >
-              <img
-                src="icons-vue.js.png"
-                alt="Logo Vue.js "
-                className={style.iconeJs}
-              />
+              <img src={vuejs} alt="Logo Vue.js" className={style.iconeJs} />
             </div>
           </div>
         </div>

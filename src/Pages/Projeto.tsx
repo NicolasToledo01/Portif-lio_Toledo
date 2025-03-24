@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import style from "./Projeto.module.css"; // Assegure-se de criar e importar o CSS adequado
+import loginHermes from "../../public/login-hermes.png";
 
 const Projeto = () => {
   return (
@@ -9,7 +10,7 @@ const Projeto = () => {
       <div className={style.containerprojetos}>
         <div className={style.projeto}>
           <div className={style.capa}>
-            <img src="login-hermes.png" alt="Imagem do projeto" />
+            <img src={loginHermes} alt="Imagem do projeto" />
           </div>
           <h3 className={style.tituloprojeto}># Freelancer </h3>
           <p className={style.descrição}>

@@ -1,67 +1,55 @@
 import { Link } from "react-scroll"; // Usando react-scroll para navegação suave
 import styles from "./Navbar.module.css";
+import setaEsquerda from "../../public/seta-esquerda.png";
+import barraDivisao from "../../public/barra-divisao.png";
+import setaDireita from "../../public/seta-direita .png"; // Verifique se o arquivo existe
+import iconsWhatsapp from "../../public/icons-whatsapp.png";
+import iconsLinkedin from "../../public/icons-linkedin.png";
+import iconsGmail from "../../public/icons-gmail.png";
+import iconsGithub from "../../public/icons-github.png";
 
 const NavBar = () => {
   return (
     <nav className={styles.nav}>
       <div className={styles.lineIcons}>
         <div className={styles.lineNav}>
-          <img className={styles.icone} src="seta-esquerda.png" alt="" />
+          <img className={styles.icone} src={setaEsquerda} alt="" />
           <label className={styles.Nome}>Nicolas Toledo</label>{" "}
-          <img className={styles.icone} src="barra-divisao.png" alt="" />{" "}
-          <img className={styles.icone} src="seta-direita .png" alt="" />
+          <img className={styles.icone} src={barraDivisao} alt="" />{" "}
+          <img className={styles.icone} src={setaDireita} alt="" />
         </div>
         <div className={styles.columIcons}>
-          <a
-            href="http://wa.me/5511987585642"
-            target="_blank"
-            rel="noopener noreferrer "
-          >
-            <img className={styles.icons} src="icons-whatsapp.png" alt="" />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/nicolas-toledo-dev/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img className={styles.icons} src="icons-linkedin.png" alt="" />
-          </a>
-          <a
-            href="mailto:nicolas01.toledo@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img className={styles.icons} src="icons-gmail.png" alt="" />
-          </a>
-          <a
-            href="//github.com/NicolasToledo01"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img className={styles.icons} src="icons-github.png" alt="" />
-          </a>
+          <img className={styles.icons} src={iconsWhatsapp} alt="" />
+          <img className={styles.icons} src={iconsLinkedin} alt="" />
+          <img className={styles.icons} src={iconsGmail} alt="" />
+          <img className={styles.icons} src={iconsGithub} alt="" />
         </div>
       </div>
 
       <ul className={styles.ul}>
         <li>
-          <Link to="home" smooth={true} duration={1000}>
+          <Link to="home" smooth={true} duration={500}>
             Menu
           </Link>
         </li>
         <li>
-          <Link to="aboutme" smooth={true} duration={1000}>
+          <Link to="aboutme" smooth={true} duration={500}>
             Quem sou
           </Link>
         </li>
         <li>
-          <Link to="skills" smooth={true} duration={1000}>
-            Habilidades
+          <Link to="skills" smooth={true} duration={500}>
+            Skills
           </Link>
         </li>
         <li>
-          <Link to="projeto" smooth={true} duration={1000}>
+          <Link to="projeto" smooth={true} duration={500}>
             Projetos
+          </Link>
+        </li>
+        <li>
+          <Link to="contatos" smooth={true} duration={500}>
+            Contatos
           </Link>
         </li>
       </ul>
