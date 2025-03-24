@@ -169,6 +169,12 @@
     width: 35px;
     height: 45px;
   }
+  .titles {
+    margin: 0.4rem;
+  }
+  .titlesAprendizagem {
+    margin: 0.8rem 1rem;
+  }
 }
 /* Efeito de onda */
 .CardSkill:active::after {

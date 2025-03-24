@@ -63,12 +63,45 @@
 
 /* Media Queries para Responsividade */
 @media (max-width: 768px) {
-  /* A classe .card não é usada, então pode ser removida */
+  .containerprojetos {
+    flex-direction: column;
+  }
+
+  .tituloprojeto {
+    font-size: 1.2rem;
+  }
+
+  .descrição {
+    font-size: 0.9rem;
+  }
 }
 
 @media (max-width: 480px) {
+  .main {
+    height: auto;
+    padding: 20px;
+  }
+
+  .h1 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+
   .projeto {
     padding: 15px;
+    border-radius: 15px;
+  }
+
+  .capa {
+    height: 150px;
+  }
+
+  .tituloprojeto {
+    font-size: 1rem;
+  }
+
+  .descrição {
+    font-size: 0.8rem;
   }
 }
 

@@ -72,51 +72,67 @@
 
 /* Media Queries para responsividade */
 @media (max-width: 768px) {
-  /* Para telas menores, como tablets e smartphones */
   .icone {
-    width: 1.5rem; /* Diminui o tamanho dos ícones */
+    width: 1.5rem;
     height: 1.5rem;
   }
 
   .divParagrafos {
-    font-size: 0.9rem; /* Diminui tamanho da fonte em telas menores */
+    font-size: 0.9rem;
   }
 
   .container {
-    flex-direction: column; /* Muda o layout para coluna em telas menores */
-    align-items: flex-start; /* Alinha os itens no início */
+    flex-direction: column;
+    align-items: center; /* Alinha os itens no centro */
+    gap: 2rem; /* Adiciona espaçamento entre os itens */
   }
+
   .main {
     padding: 20px;
     height: auto;
     margin: 0 auto;
   }
-  .container {
-    display: flex;
-    flex-direction: row;
-  }
+
   .men {
-    width: 0px;
-    height: 0px;
+    width: 100%; /* Ajusta largura para ocupar o espaço disponível */
+    max-width: 200px; /* Define um limite máximo */
+    height: auto;
   }
+
   .divIcones {
-    margin-top: 20%;
+    margin-top: 10%;
   }
 }
 
 @media (max-width: 480px) {
-  /* Para celulares */
   .main {
-    padding-inline: 0.5rem; /* Diminui o padding em telas menores */
-    margin-top: 50%;
+    padding-inline: 0.5rem;
+    margin-top: 10%;
     padding: 20px;
     height: auto;
   }
-  .men {
-    width: 0px;
-    height: 0px;
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
   }
   .divIcones {
-    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+  }
+  .men {
+    width: 100%;
+    max-width: 150px; /* Reduz ainda mais o limite máximo */
+    height: auto;
+  }
+
+  .divIcones {
+    margin-top: 5%;
+  }
+
+  .contato {
+    width: 140px; /* Ajusta o botão para telas menores */
+    height: 35px;
+    font-size: 18px;
   }
 }

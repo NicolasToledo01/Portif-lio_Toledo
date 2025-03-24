@@ -20,14 +20,14 @@ const LottieAnimation: React.FC = () => {
 
   return (
     <div
-      className={styles.animationContainer}
+      className={`${styles.animationContainer} ${styles.responsiveAnimation}`}
       onClick={playSound}
       role="button"
       tabIndex={0}
     >
       {" "}
       {/* Adiciona um contêiner */}
-      <Lottie options={defaultOptions} height={140} width={140} />
+      <Lottie options={defaultOptions} />
     </div>
   );
 };

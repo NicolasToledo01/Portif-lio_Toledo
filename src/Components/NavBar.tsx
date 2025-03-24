@@ -47,11 +47,6 @@ const NavBar = () => {
             Projetos
           </Link>
         </li>
-        <li>
-          <Link to="contatos" smooth={true} duration={500}>
-            Contatos
-          </Link>
-        </li>
       </ul>
     </nav>
   );

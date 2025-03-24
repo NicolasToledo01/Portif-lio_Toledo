@@ -8,14 +8,15 @@
   margin-top: 30%;
   margin-left: 40%;
   cursor: pointer;
+  transition: all 0.3s ease-in-out; /* Suaviza mudanças de tamanho */
 }
 .sobre {
   justify-content: center;
   text-align: center;
   align-items: center;
-  border-bottom: 2px solid #e26512;
   margin-top: 1rem;
 }
+
 .left {
   background-color: #f2f2f2; /* Metade esquerda branca */
   width: 50%; /* Ocupa 50% do espaço */
@@ -23,7 +24,6 @@
   position: absolute;
   left: 0; /* Alinhar à esquerda */
   border-bottom-right-radius: 100px; /* Bordas arredondadas na parte inferior esquerda */
-  border-top: 2px solid #e26512;
 }
 
 .right {
@@ -53,6 +53,13 @@
 
 /* Media Queries para responsividade */
 @media (max-width: 768px) {
+  .animationContainer {
+    width: 120px; /* Reduz tamanho em telas menores */
+    height: 120px;
+    margin-top: 20%; /* Ajusta margem superior */
+    margin-left: 35%; /* Ajusta margem esquerda */
+  }
+
   .card {
     width: 80%; /* Aumenta a largura em telas menores */
   }
@@ -61,9 +68,25 @@
 @media (max-width: 480px) {
   .main {
     padding-inline: 0.5rem; /* Diminui o padding em telas menores */
+    margin-bottom: 40%;
+  }
+
+  .animationContainer {
+    width: 100px; /* Ajusta tamanho para telas de celulares */
+    height: 100px;
+    margin-top: 50%; /* Ajusta margem superior */
+    margin-left: 30%; /* Ajusta margem esquerda */
   }
 
   .card {
     width: 90%; /* Ajusta a largura para telas de celulares */
+  }
+  .right {
+    background-color: #e26512; /* Metade direita laranja */
+    width: 40%; /* Ocupa 50% do espaço */
+    height: 100%; /* Altura total */
+    position: absolute;
+    right: 0; /* Alinhar à direita */
+    border-bottom-left-radius: 100px; /* Bordas arredondadas na parte inferior esquerda */
   }
 }

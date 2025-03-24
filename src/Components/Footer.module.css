@@ -59,3 +59,56 @@ footer {
   font-style: normal;
   margin-left: 3rem;
 }
+
+@media (max-width: 768px) {
+  footer {
+    display: flex;
+    flex-direction: row; /* Altere para coluna em telas menores */
+    align-items: center;
+    padding: 1.5rem;
+    gap: 1rem;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column; /* Ajuste a direção para coluna */
+    font-size: 10px;
+  }
+
+  .Nome {
+    margin-left: 0; /* Remova o espaçamento lateral */
+    text-align: center; /* Centralize o texto */
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .h2 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .icone {
+    width: 20px; /* Reduza o tamanho dos ícones */
+    height: 20px;
+  }
+
+  .p {
+    font-size: 16px; /* Ajuste o tamanho da fonte */
+  }
+
+  .h2 {
+    font-size: 20px; /* Ajuste o tamanho da fonte */
+  }
+}

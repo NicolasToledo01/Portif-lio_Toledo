@@ -90,8 +90,12 @@ const Skills = () => {
       <div className={style.right}>
         <div className={style.titles}>
           <h1 className={style.h1}>Habilidades</h1>
-          <p>habilidades que desenvolvi ao longo</p>
-          <p>do meu aprendizado e experiência profissional:</p>
+          <div className={style.titlesAprendizagem}>
+            <p>
+              habilidades que desenvolvi com meu aprendizado e experiência
+              profissional:
+            </p>
+          </div>
         </div>
         <div className={style.containerCards}>
           <div className={style.flex}>
