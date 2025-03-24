@@ -2,7 +2,7 @@ import { Link } from "react-scroll"; // Usando react-scroll para navegação sua
 import styles from "./Navbar.module.css";
 import setaEsquerda from "../../public/seta-esquerda.png";
 import barraDivisao from "../../public/barra-divisao.png";
-import setaDireita from "../../public/seta-direita .png"; // Verifique se o arquivo existe
+import setaDireita from "../../public/seta-direita .png";
 import iconsWhatsapp from "../../public/icons-whatsapp.png";
 import iconsLinkedin from "../../public/icons-linkedin.png";
 import iconsGmail from "../../public/icons-gmail.png";
