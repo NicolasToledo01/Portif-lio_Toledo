@@ -68,7 +68,6 @@
 @media (max-width: 480px) {
   .main {
     padding-inline: 0.5rem; /* Diminui o padding em telas menores */
-    margin-bottom: 40%;
   }
 
   .animationContainer {
@@ -76,14 +75,18 @@
     height: 100px;
     margin-top: 50%; /* Ajusta margem superior */
     margin-left: 30%; /* Ajusta margem esquerda */
+    display: none;
   }
 
   .card {
-    width: 90%; /* Ajusta a largura para telas de celulares */
+    width: 120%; /* Ajusta a largura para telas de celulares */
+  }
+  .card p {
+    font-size: 12px;
   }
   .right {
     background-color: #e26512; /* Metade direita laranja */
-    width: 40%; /* Ocupa 50% do espaço */
+    width: 30%; /* Ocupa 50% do espaço */
     height: 100%; /* Altura total */
     position: absolute;
     right: 0; /* Alinhar à direita */

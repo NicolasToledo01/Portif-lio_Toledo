@@ -3,15 +3,14 @@ footer {
   background-color: #0a0a0a; /* Cor de fundo */
   color: white; /* Cor do texto */
   text-align: center; /* Centraliza o texto */
-  width: 100%; /* Largura total */
+  width: 100vw; /* Largura total da viewport */
   position: relative; /* Para evitar sobreposições */
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
   margin-top: 3rem;
+  margin-left: -8px;
 }
 .icone:hover {
   transform: scale(1.5);
